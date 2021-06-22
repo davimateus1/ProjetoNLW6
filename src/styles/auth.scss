@@ -1,0 +1,138 @@
+#pageAuth{
+    display:flex;
+    align-items:stretch;
+    height: 100vh;
+
+    aside{
+        flex: 7;
+        background: #835afd;
+        color: #fff;
+
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+
+        padding: 120px 80px;
+
+        img{
+        max-width:  320px;          
+        }
+        strong{
+            font: 700 36px 'Poppins', sans-serif;
+            line-height:42px;
+            margin-top: 16px;
+        }
+
+        p{
+           font-size:24px;
+           line-height:32px;
+           margin-top:15px; 
+           color: #f8f8f7;
+        }
+    }
+    
+    main{
+        flex: 8;
+        padding: 0 32px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .mainContent{
+        display:flex; 
+        flex-direction:column;
+        width:100%;
+        max-width: 320px;
+        align-items: stretch;
+        text-align: center;   
+
+    > img{
+        align-items: center;
+    }
+    
+    h2{
+        font-size:24px;
+        margin: 64px 0 24px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    form{
+        input{
+            height: 50px;
+            border-radius: 8px;
+            padding:0 16px;
+            background: #fff;
+            border: 1px solid #9797a0;
+   }
+   button{
+       margin-top: 16px;
+   }
+
+   button, input{
+       width:100%;
+   }
+  }
+
+  P{
+    font-size:14px;
+    color: #9797a0;
+    margin-top: 16px;
+
+    a{
+        color: #de4ef1;
+    }
+  }
+ }
+
+.createRoom{
+    margin-top: 64px;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: hsl(5, 81%, 56%);
+    color: #fff;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 0;
+    img{
+        margin-right: 8px;
+    }
+
+    &:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.1);
+        filter: brightness(0.9);
+    }
+}
+
+.separator{
+    font-size:14px;
+    color: #9797a0;
+
+    margin: 32px 0;
+    display:flex;
+    align-items:center;
+
+    &::before{
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: #9797a0;
+        margin-right: 16px;
+    }
+
+    &::after{
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: #9797a0;
+        margin-left: 16px;
+    }
+}
+}
+
