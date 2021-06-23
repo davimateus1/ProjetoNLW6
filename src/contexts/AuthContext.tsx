@@ -40,7 +40,7 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
         }
       })
   
-      return () =>{
+      return () =>{ 
         unsubscribe()
       }
   
@@ -68,8 +68,8 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
   }
 
     return(
-<AuthContext.Provider value={{ user, SignInWithGoogle }}>
-{props.children}
-</AuthContext.Provider>
+  <AuthContext.Provider value={{ user, SignInWithGoogle }}>
+        {props.children}
+  </AuthContext.Provider>
     );
 }
