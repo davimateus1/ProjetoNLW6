@@ -12,8 +12,20 @@
     transition: all 0.5s;
     cursor: pointer;
     border: 0;
+
     img{
         margin-right: 8px;
+    }
+
+    &.outlined{
+        background: #fff;
+        border: 1px solid #835afd;
+        color: #835afd;
+    }
+
+    &.outlined:hover{
+        -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     }
 
     &:not(disabled)hover{
