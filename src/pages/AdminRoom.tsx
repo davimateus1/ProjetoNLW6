@@ -4,6 +4,8 @@ import { database } from '../services/firebase';
 
 import logoImg from '../assets/imagesNlw/logo.svg'
 import deleteImg from '../assets/imagesNlw/delete.svg'
+import checkImg from '../assets/imagesNlw/check.svg'
+import answerImg from '../assets/imagesNlw/answer.svg'
 
 import { Button } from '../components/Button';
 import { RoomCode } from '../components/RoomCode';
@@ -39,6 +41,21 @@ export function AdminRoom(){
       }
     }
 
+    async function handleCheckQuestion(questionId: string){
+            await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
+              isAnswered: true,            
+            });
+          
+    }
+
+    async function handleSpotlight(questionId: string){
+        if (window.confirm('Tem certeza que deseja dar destaqque a essa pergunta?')){
+            await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
+              isHighlighted: true,  
+            });
+          }
+    }
+
     return(
     <div id="pageRoom">
         <header>
@@ -64,7 +81,25 @@ export function AdminRoom(){
                     key={question.id}
                     content={question.content}
                     author={question.author}
+                    isAnswered={question.isAnswered}
+                    isHighlighted={question.isHighlighted}
                     >
+                     {!question.isAnswered && (
+                           <>
+                           <button
+                             type="button"
+                             onClick={() => handleCheckQuestion(question.id)}
+                             >
+                                 <img src={checkImg} alt="Marca a pergunta como respondida" />
+                             </button>
+                              <button
+                             type="button"
+                             onClick={() => handleSpotlight(question.id)}
+                             >
+                                 <img src={answerImg} alt="Dar destaque a pergunta" />
+                             </button>
+                             </>
+                     )}
                         <button
                         type="button"
                         onClick={() => handleDeleteQuestion(question.id)}
