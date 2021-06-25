@@ -12,8 +12,21 @@
 
 <br>
 
+<h2>🖥️ Tela principal: </h2>
 <p align="center">
   <img alt="Happy" src="https://user-images.githubusercontent.com/66326378/123469750-d72b1600-d5c9-11eb-9983-94b159f85829.jpg" width="100%">
+</p>
+<h2>🖥️ Tela de criação de sala: </h2>
+<p align="center">
+  <img alt="Happy" src="https://user-images.githubusercontent.com/66326378/123472525-a947d080-d5cd-11eb-8512-cb769194cfd6.jpg" width="100%">
+</p>
+<h2>🖥️ Sala para os usuários: </h2>
+<p align="center">
+  <img alt="Happy" src="https://user-images.githubusercontent.com/66326378/123472613-c54b7200-d5cd-11eb-9394-5acb5814a5aa.jpg" width="100%">
+</p>
+<h2>🖥️ Sala na visão do administrador: </h2>
+<p align="center">
+  <img alt="Happy" src="https://user-images.githubusercontent.com/66326378/123472735-ef049900-d5cd-11eb-8654-b2b94f1de907.jpg" width="100%">
 </p>
 
 ## ✨ Tecnologias
