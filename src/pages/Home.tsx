@@ -5,8 +5,8 @@ import { useAuth } from '../hooks/useAuth';
 import { FormEvent, useState } from 'react';
 import { database } from '../services/firebase';
 
-import illustrationImg from '../assets/imagesNlw/illustration.svg'
-import logoImg from '../assets/imagesNlw/logo.svg';
+import illustrationImg from '../assets/imagesNlw/illustration.png'
+import logoImg from '../assets/imagesNlw/logo.png';
 import iconGoogleImg from '../assets/imagesNlw/google-icon.svg';
 
 import { Button } from '../components/Button';
@@ -36,12 +36,12 @@ async function handleJoinRoom(event: FormEvent){
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if(!roomRef.exists()){
-        alert('this room doesnt exist.')
+        alert('Essa sala não existe!')
         return;
     }
 
     if(roomRef.val().endedAt){
-        alert('Room already closed.')
+        alert('Esta sala já foi encerrada.')
         return;
     }
 
@@ -54,12 +54,12 @@ async function handleJoinRoom(event: FormEvent){
         <div id="pageAuth">
         <aside>
              <img src={illustrationImg} alt="Ilustração principal" />
-             <strong>Crie salas de Q&amp;A ao vivo</strong>
-             <p>Tire as dúvidas da sua audiência em tempo real!</p>
+             <strong>Crie salas para turbinar sua jogatina</strong>
+             <p>Tire dúvidas do seus games favoritos em tempo real!</p>
         </aside>   
         <main>
         <div className='mainContent'>
-            <img src={logoImg} alt="LetMeAsk" />
+            <img src={logoImg} alt="LetmeAsk" />
             <button onClick={handleCreateRoom} className='createRoom'>
                 <img src={iconGoogleImg} alt="Logo Google" />
                 Crie sua sala via Google

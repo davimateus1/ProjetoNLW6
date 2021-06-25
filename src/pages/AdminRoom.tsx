@@ -2,7 +2,7 @@ import { useParams, useHistory } from 'react-router-dom'
 
 import { database } from '../services/firebase';
 
-import logoImg from '../assets/imagesNlw/logo.svg'
+import logoImg from '../assets/imagesNlw/logo.png'
 import deleteImg from '../assets/imagesNlw/delete.svg'
 import checkImg from '../assets/imagesNlw/check.svg'
 import answerImg from '../assets/imagesNlw/answer.svg'
@@ -10,7 +10,6 @@ import answerImg from '../assets/imagesNlw/answer.svg'
 import { Button } from '../components/Button';
 import { RoomCode } from '../components/RoomCode';
 import '../styles/room.scss';
-//import { useAuth } from '../hooks/useAuth'
 import { useRoom } from '../hooks/useRoom'
 import { Question } from '../components/Question';
 
@@ -20,7 +19,6 @@ type RoomParams = {
 }
 
 export function AdminRoom(){
-  //  const { user } = useAuth();
     const history = useHistory();
     const params = useParams<RoomParams>();
     const roomId = params.id;

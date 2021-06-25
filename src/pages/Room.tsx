@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import logoImg from '../assets/imagesNlw/logo.svg'
+import logoImg from '../assets/imagesNlw/logo.png'
 import { Button } from '../components/Button';
 import { RoomCode } from '../components/RoomCode';
 import '../styles/room.scss';

@@ -3,8 +3,8 @@ import { FormEvent, useState } from 'react'
 import { database } from '../services/firebase'
 import { useAuth } from '../hooks/useAuth';
 
-import illustrationImg from '../assets/imagesNlw/illustration.svg'
-import logoImg from '../assets/imagesNlw/logo.svg';
+import illustrationImg from '../assets/imagesNlw/illustration.png'
+import logoImg from '../assets/imagesNlw/logo.png';
 
 import { Button } from '../components/Button';
 
@@ -35,8 +35,8 @@ async function handleCreateRoom(event: FormEvent){
         <div id="pageAuth">
         <aside>
              <img src={illustrationImg} alt="Ilustração principal" />
-             <strong>Crie salas de Q&amp;A ao vivo</strong>
-             <p>Tire as dúvidas da sua audiência em tempo real!</p>
+             <strong>Crie salas para turbinar sua jogatina</strong>
+             <p>Tire dúvidas do seus games favoritos em tempo real!</p>
         </aside>   
         <main>
         <div className='mainContent'>

@@ -1,7 +1,7 @@
 #pageRoom{
     header{
         padding: 25px;
-        border-bottom: 1px solid #f1e4e4;
+        border-bottom: 1px solid #3cff00;
 
         .content{
             max-width:  1120px;
@@ -37,12 +37,12 @@
             h1{
                 font-family: 'Poppins', sans-serif;
                 font-size: 24px;
-                color: #29292c;
+                color: #000000;
             }
 
             span{
                 margin-left: 16px;
-                background: #de4ef1;
+                background: #3cff00;
                 border-radius: 9999px;
                 padding: 8px 16px;
                 color: #fff;
@@ -57,7 +57,7 @@
                 border: 0;
                 padding: 16px;
                 border-radius: 8px;
-                background: #fefefe;
+                background: #dcf5cb;
                 box-shadow: 0 2px 12px rgba(0,0,0,0.04);
                 resize: vertical;
                 min-height: 130px;
@@ -100,7 +100,7 @@
                     button{
                         background: transparent;
                         border: 0;
-                        color: #835afd;
+                        color: #3cff00;
                         text-decoration: underline;
                         font-size: 14px;
                         cursor: pointer;
